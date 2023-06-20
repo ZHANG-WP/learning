@@ -1,0 +1,1 @@
+	$sql = "INSERT INTO `user`(`name`, `password`, `email`, `address`, `phone`) VALUES ('".$myuserid."','".$myuserpwd."','".$myemail."','".$myaddress."','".$myphone."')";
