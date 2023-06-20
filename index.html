@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>行動裝置線上訂購系統</title>
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--引用jQuery Mobile函式庫  套用ThemeRoller製作的樣式-->
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="themes/sweet.min.css" rel="stylesheet" />
+    <link href="themes/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="themes/jquery.mobile.structure-1.4.2.min.css" rel="stylesheet" />
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <a href="order.html" data-ajax="false" data-role="button" data-mini="check" data-inline="true" data-icon="back">Back</a>
+            <h1>甜點</h1>
+        </div>
+        <div data-role="content">
+            <img src="images/index.png" /><br /><br />
+            <a href="order.html" data-role="button" data-ajax="false" data-mini="true" data-inline="true" data-icon="check" data-iconpos="top">
+                <img src="images/food.png" /><br />訂購
+            </a>
+            <a href="order.html" data-role="button" data-ajax="false" data-mini="true" data-inline="true" data-icon="star" data-iconpos="top">
+                <img src="images/check.png" /><br />查訂單
+            </a>
+            <a href="order.html" data-role="button" data-ajax="false" data-mini="true" data-inline="true" data-icon="home" data-iconpos="top">
+                <img src="images/store.png" /><br />找店家
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>訂購專線：45454545</h1>
+        </div>
+    </div>
+</body>
+</html>

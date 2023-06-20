@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>甜點列表</title>
+    <!--最佳化螢幕寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--引用jQuery Mobile函式庫  套用ThemeRoller製作的樣式-->
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="themes/sweet.min.css" rel="stylesheet" />
+    <link href="themes/jquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="themes/jquery.mobile.structure-1.4.2.min.css" rel="stylesheet" />
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .third{
+            font-size:20px;
+        }
+        .third1{
+            font-size:25px;
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <!--**********************第一頁**********************-->
+    <div data-role="page">
+        <div data-role="header">
+            <h1>甜點列表</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li data-icon="gear">
+                    <a href="#second">
+                        <img src="images/chocolat.png" />
+                        <h3>巧克力</h3>
+                        <p>採頂級可可粉製作，韻味濃厚，入口即化</p>
+                        <a href="#second" data-icon="gear"></a>
+                    </a>
+                </li>
+                <li data-icon="gear">
+                    <a href="#second">
+                        <img src="images/cookie.png" />
+                        <h3>餅乾</h3>
+                        <p>低糖、低脂，香氣迷人</p>
+                        <a href="#second" data-icon="gear"></a>
+                    </a>
+                </li>
+                <li data-icon="gear">
+                    <a href="#second">
+                        <img src="images/cake.png" />
+                        <h3>蛋糕</h3>
+                        <p>精選高級巧克力奶油搭配綿密海綿蛋糕，絕佳口感</p>
+                        <a href="#second" data-icon="gear"></a>
+                    </a>
+                </li>
+                <li data-icon="gear">
+                    <a href="#second">
+                        <img src="images/bread.png" />
+                        <h3>麵包</h3>
+                        <p>純手工製作天然不含任何添加物</p>
+                        <a href="#second" data-icon="gear"></a>
+                    </a>
+
+                </li>
+            </ul>
+            
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>訂購專線：45454545</h1>
+        </div>
+    </div>
+    <!--****************************第一頁結束*****************************-->
+    <!--***************************第二頁****************************-->
+    <div data-role="page" id="second">
+        <div data-role="header">
+            <h1>選擇甜點</h1>
+        </div>
+        <div data-role="content">
+
+            包裝類型
+            <select>
+                <option value="1">粉紅包裝盒</option>
+                <option value="2">一般盒裝</option>
+                <option value="3">鐵盒</option>：
+                <option value="4">精緻包裝</option>
+            </select>
+
+
+            <fieldset data-role="controlgroup">
+                <legend>選擇口味：</legend>
+                <input type="radio" name="dressert" id="aa" value="核桃" />
+                <label for="aa">核桃</label>
+                <input type="radio" name="dressert" id="bb" value="夏威夷豆" />
+                <label for="bb">夏威夷豆</label>
+                <input type="radio" name="dressert" id="cc" value="花生" />
+                <label for="cc">花生</label>
+                <input type="radio" name="dressert" id="dd" value="榛子巧克力" />
+                <label for="dd">榛子巧克力</label>
+            </fieldset>
+            訂購數量：
+            <input type="range" name="poins" min="1" max="10" value="1" step="1" />
+
+            <a href="#third"><input type="submit" value="送出訂購" /></a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>訂購專線：45454545</h1>
+        </div>
+    </div>
+    <!--***************************第二頁結束****************************-->
+    <!--***************************第三頁****************************-->
+    <div data-role="page" id="third">
+        <div data-role="header">
+            <h1>訂購完成</h1>
+        </div>
+        <div data-role="content">
+            <img src="images/present.png" />
+            <p class="third">
+                感謝您向甜點訪訂購甜點<br />
+                以下為您的訂購清單：
+            </p>
+            <p class="third1">甜點種類：</p>
+            <p class="third1">口味：</p>
+            <p class="third1">數量：</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>訂購專線：45454545</h1>
+        </div>
+    </div>
+    <!--***************************第三頁結束****************************-->
+</body>
+</html>
